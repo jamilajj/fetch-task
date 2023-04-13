@@ -14,3 +14,16 @@ try{
     alert("seher yoxdur")
 }
 })
+{let tbl = `
+<div class="box weather">
+<div class="icon bubble black">
+
+</div>
+<div class="temp">${Math.floor(value.main.temp)}°C</span>
+
+</div>`
+
+let createTbl = document.createElement("div");
+createTbl.innerHTML = tbl;
+body.append(createTbl);
+}
